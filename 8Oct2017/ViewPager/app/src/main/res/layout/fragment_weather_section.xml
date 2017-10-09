@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f0"
+    tools:context="com.demo.viewpager.WeatherSection">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Section" />
+
+</FrameLayout>

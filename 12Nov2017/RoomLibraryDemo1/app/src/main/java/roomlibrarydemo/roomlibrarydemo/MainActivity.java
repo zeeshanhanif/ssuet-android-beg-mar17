@@ -74,8 +74,11 @@ public class MainActivity extends AppCompatActivity {
                 String nameStr = nameEt.getText().toString();
                 String phoneStr = phoneEt.getText().toString();
                 int id = Integer.valueOf(idEt.getText().toString());
-                Contact contact = new Contact(nameStr,phoneStr);
-                contact.setId(id);
+                Contact contact = db.contacts().getContactById(id);
+                //Contact contact = new Contact(nameStr,phoneStr);
+                contact.setName(nameStr);
+                contact.setPhone(phoneStr);
+                //contact.setId(id);
                 db.contacts().updateContact(contact);
             }
         });
